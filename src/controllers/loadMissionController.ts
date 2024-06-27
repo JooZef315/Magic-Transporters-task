@@ -4,7 +4,7 @@ import { CustomError } from "../config/customErrors";
 import { QuestStateEnum } from "../enums";
 import { logger } from "../config/logger";
 
-// @desc    load Mission
+// @desc    load a mover with an item
 // @route   PATCH /mission/end
 export const loadMissionController = async (req: Request, res: Response) => {
   const moverId: string = req.body.moverId;
