@@ -26,6 +26,6 @@ model Items {
   name        String  @unique
   weight      Int
   isCompleted Boolean @default(false)
-  mover       Movers? @relation(fields: [moversId], references: [id])
-  moversId    String?
+  mover       Movers? @relation(fields: [moverId], references: [id])
+  moverId     String?
 }

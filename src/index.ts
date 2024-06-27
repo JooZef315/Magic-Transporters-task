@@ -24,7 +24,7 @@ rootRouter.get("/movers/top", asyncHandler(getTopMoverController));
 rootRouter.post("/items", asyncHandler(addItemController));
 
 rootRouter.patch("/mission/load", asyncHandler(loadMissionController));
-rootRouter.patch('"/mission/start"', asyncHandler(startMissionController));
+rootRouter.patch("/mission/start", asyncHandler(startMissionController));
 rootRouter.patch("/mission/end", asyncHandler(endMissionController));
 
 app.use("/", rootRouter);
